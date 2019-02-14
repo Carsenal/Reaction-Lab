@@ -24,10 +24,7 @@ class Subject{
     this.reactions = [];
   }
   react(c, t){
-    this.react(new Reaction(c,t));
-  }
-  react(r){
-    this.reactions.push(r);
+    this.reactions.push(new Reaction(c,t));
     console.log(this.reactions);
   }
   get csv(){
