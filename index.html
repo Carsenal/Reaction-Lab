@@ -1,0 +1,19 @@
+<html>
+  <head>
+    	<script src="./test.js"></script>
+  </head>
+  <body onload = "init()">
+    <div id="progressBar"></div>
+  	<div id="keyboard">
+  		<div id="leftCover" class="cover"></div>
+  		<div id="highlight" class="notShowing"></div>
+  		<div id="rightCover" class="cover"></div>
+  	</div>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+    <button id="signin-button" onclick="handleSignInClick()">Sign in</button>
+    <button id="signout-button" onclick="handleSignOutClick()">Sign out</button>
+  </body>
+</html>
